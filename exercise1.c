@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 void oddEven(int up)
 {
@@ -36,8 +37,20 @@ void oddEven(int up)
 int main()
 {
     int upperBound;
-    printf("Enter the upper bound : ");
-    scanf("%d", &upperBound);
+    bool x = true;
+    while (x)
+    {
+        printf("Enter the upper bound : ");
+        scanf("%d", &upperBound);
+        if (upperBound <= 0)
+        {
+            printf("Enter a value greater than 0 \n");
+        }
+        else
+        {
+            break;
+        }
+    }
     oddEven(upperBound);
     return 0;
 }
