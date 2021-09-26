@@ -1,0 +1,1 @@
+# Compile Question 3 with the ```-lm``` flag
