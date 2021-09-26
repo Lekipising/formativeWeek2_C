@@ -3,12 +3,24 @@
 #include <stdlib.h>
 #include <math.h>
 
-void findCloseSq(int num)
+int checkIfPerfect(int num)
 {
     double sqrIs = sqrt(num);
     if (ceil(sqrIs) == floor(sqrIs))
     {
-        printf("The square root of the integer is a whole number. \n");
+        return num;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+void findCloseSq(int num)
+{
+    if (checkIfPerfect(num) != 0)
+    {
+        printf("%d is a perfect square. \n", num);
     }
     else
     {
@@ -35,7 +47,6 @@ void findCloseSq(int num)
                 break;
             }
             currentLevel++;
-        
         }
     }
 }
