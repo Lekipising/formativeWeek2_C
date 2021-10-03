@@ -28,7 +28,7 @@ void oddEven(int up)
     }
 
     printf("The sum of even numbers is : %d \n", sumOfEven);
-    printf("The sum of odd numbers is : %d \n", sumOfOdd);
+    printf("The sum of oddfreecodenumbers is : %d \n", sumOfOdd);
     printf("The absolute difference of sum of odd and sum of even is : %d \n", abs(sumOfOdd - sumOfEven));
     printf("A third of the sum of even numbers is : %lf \n", 0.3333 * sumOfEven);
     printf("A third of the sum of odd numbers is : %lf \n", 0.2 * sumOfOdd);
