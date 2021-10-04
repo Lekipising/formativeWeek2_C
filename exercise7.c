@@ -2,10 +2,10 @@
 int main()
 {
     int i, j;
-    int space = 4;
+    int dimension = 4;
     for (i = 0; i < 5; i++)
     {
-        for (j = 0; j < space; j++)
+        for (j = 0; j < dimension; j++)
         {
             printf(" ");
         }
@@ -15,12 +15,12 @@ int main()
         }
 
         printf("\n");
-        space--;
+        dimension--;
     }
-    space = 0;
+    dimension = 0;
     for (i = 5; i > 0; i--)
     {
-        for (j = 0; j < space; j++)
+        for (j = 0; j < dimension; j++)
         {
             printf(" ");
         }
@@ -30,7 +30,7 @@ int main()
         }
 
         printf("\n");
-        space++;
+        dimension++;
     }
 
     return 0;
